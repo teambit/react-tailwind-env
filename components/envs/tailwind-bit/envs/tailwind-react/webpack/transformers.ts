@@ -1,5 +1,5 @@
 import { WebpackConfigTransformer, WebpackConfigMutator } from "@teambit/webpack";
-import { styleRegexps } from "@teambit/react";
+import { cssNoModulesRegex } from "@teambit/modules.style-regexps";
 import tailwindcssPlugin from "tailwindcss";
 import autoprefixerPlugin from "autoprefixer";
 
@@ -45,7 +45,7 @@ export const devServerConfig: WebpackConfigTransformer = (
 
 function findCssRuleByCssNoModuleRegexp(rules: Array<any> = []) {
   return rules.find(
-    (rule) => rule.test.toString() === styleRegexps.cssNoModulesRegex.toString()
+    (rule) => rule.test.toString() === cssNoModulesRegex.toString()
   );
 }
 

@@ -1,8 +1,9 @@
 importers:
   .:
     dependencies:
+      '@teambit/modules.style-regexps': registry.npmjs.org/@teambit/modules.style-regexps/0.0.3
       autoprefixer: registry.npmjs.org/autoprefixer/10.2.5_postcss@8.2.13
-      core-js: registry.npmjs.org/core-js/3.11.2
+      core-js: registry.npmjs.org/core-js/3.12.1
       postcss: registry.npmjs.org/postcss/8.2.13
       postcss-loader: registry.npmjs.org/postcss-loader/5.2.0_postcss@8.2.13
       react: registry.npmjs.org/react/17.0.2
@@ -13,15 +14,16 @@ importers:
       '@testing-library/react': registry.npmjs.org/@testing-library/react/11.2.6_react-dom@17.0.2+react@17.0.2
       '@types/jest': registry.npmjs.org/@types/jest/26.0.23
       '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/16.14.5
+      '@types/react': registry.npmjs.org/@types/react/16.14.6
     specifiers:
       '@babel/runtime': 7.12.18
+      '@teambit/modules.style-regexps': 0.0.3
       '@testing-library/react': 11.2.6
       '@types/jest': ^26.0.23
       '@types/node': 12.20.4
-      '@types/react': ^16.14.5
+      '@types/react': ^16.14.6
       autoprefixer: 10.2.5
-      core-js: ^3.11.2
+      core-js: ^3.12.1
       postcss: 8.2.13
       postcss-loader: 5.2.0
       react: 17.0.2
@@ -155,6 +157,18 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.6.tgz
     version: 1.2.6
+  registry.npmjs.org/@teambit/modules.style-regexps/0.0.3:
+    dev: false
+    engines:
+      node: '>=12.15.0'
+    name: '@teambit/modules.style-regexps'
+    peerDependencies:
+      '@teambit/legacy': 1.0.76
+    resolution:
+      integrity: sha512-WhEGkG5pqSOs7NXZbDiQz826ScoIIcaX7fCI1ZO22EiIjJA2FGM4R9pNRQDbpV5QuDzqK238nTg6BG6wo7fimw==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@teambit/modules.style-regexps/-/modules.style-regexps-0.0.3.tgz
+    version: 0.0.3
   registry.npmjs.org/@testing-library/dom/7.30.4:
     dependencies:
       '@babel/code-frame': registry.npmjs.org/@babel/code-frame/7.12.13
@@ -264,7 +278,7 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz
     version: 15.7.3
-  registry.npmjs.org/@types/react/16.14.5:
+  registry.npmjs.org/@types/react/16.14.6:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
       '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
@@ -272,10 +286,10 @@ packages:
     dev: true
     name: '@types/react'
     resolution:
-      integrity: sha512-YRRv9DNZhaVTVRh9Wmmit7Y0UFhEVqXqCSw3uazRWMxa2x85hWQZ5BN24i7GXZbaclaLXEcodEeIHsjBA8eAMw==
+      integrity: sha512-Ol/aFKune+P0FSFKIgf+XbhGzYGyz0p7g5befSt4rmbzfGLaZR0q7jPew9k7d3bvrcuaL8dPy9Oz3XGZmf9n+w==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react/-/react-16.14.5.tgz
-    version: 16.14.5
+      tarball: https://registry.npmjs.org/@types/react/-/react-16.14.6.tgz
+    version: 16.14.6
   registry.npmjs.org/@types/scheduler/0.16.1:
     dev: true
     name: '@types/scheduler'
@@ -657,15 +671,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.11.2.tgz
     version: 3.11.2
-  registry.npmjs.org/core-js/3.11.2:
+  registry.npmjs.org/core-js/3.12.1:
     dev: false
     name: core-js
     requiresBuild: true
     resolution:
-      integrity: sha512-3tfrrO1JpJSYGKnd9LKTBPqgUES/UYiCzMKeqwR1+jF16q4kD1BY2NvqkfuzXwQ6+CIWm55V9cjD7PQd+hijdw==
+      integrity: sha512-Ne9DKPHTObRuB09Dru5AjwKjY4cJHVGu+y5f7coGn1E9Grkc3p2iBwE9AI/nJzsE29mQF7oq+mhYYRqOMFN1Bw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/core-js/-/core-js-3.11.2.tgz
-    version: 3.11.2
+      tarball: https://registry.npmjs.org/core-js/-/core-js-3.12.1.tgz
+    version: 3.12.1
   registry.npmjs.org/cosmiconfig/7.0.0:
     dependencies:
       '@types/parse-json': registry.npmjs.org/@types/parse-json/4.0.0
