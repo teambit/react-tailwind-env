@@ -11,7 +11,7 @@ function addTailwindConfig(config: WebpackConfigMutator): WebpackConfigMutator {
       "css rule not found. this probably means the webpack config of bit itself has changed"
     );
   }
-  // we already has a postcss loader
+  // we already have a postcss loader
   const postcssLoader = findPostcssLoaderInRule(cssRule.use);
   if (!postcssLoader) {
     throw new Error(
