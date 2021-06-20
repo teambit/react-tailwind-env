@@ -5,6 +5,9 @@ This is based on a live coding session you can find [here](https://www.twitch.tv
 This has been slightly updated since the live session, but watching the session should give you a good understanding of what there is here.
 
 See the already exported components in [https://bit.dev/shohamgilad/tailwind-test/](https://bit.dev/shohamgilad/tailwind-test/)
+## requirements
+This repo has recently changed to use new APIs of bit available only from version 0.0.426 or higher.
+
 ## components
 ### tailwind-react
 A custom env which extend the core react aspect and transform its webpack config to support tailwind css.
