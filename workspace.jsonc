@@ -38,7 +38,7 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@teambit/modules.style-regexps": "0.0.3",
+        "@teambit/webpack.modules.style-regexps": "0.0.31",
         "@testing-library/react": "11.2.6",
         "autoprefixer": "10.2.5",
         "postcss": "8.2.13",
@@ -54,7 +54,8 @@
     "devFilePatterns": [
       "**/*.spec.ts"
     ],
-    "strictPeerDependencies": true
+    "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
