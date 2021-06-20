@@ -2,11 +2,8 @@ import { WebpackConfigTransformer, WebpackConfigMutator } from "@teambit/webpack
 import * as stylesRegexps from "@teambit/webpack.modules.style-regexps";
 import tailwindcssPlugin from "tailwindcss";
 
-import autoprefixerPlugin from "autoprefixer";
-
 function addTailwindConfig(config: WebpackConfigMutator): WebpackConfigMutator {
   // @ts-ignore
-  // console.log(config.raw.module.rules);
   const oneOfRule = findOneOfRuleInPreviewConfig(config.raw.module.rules);
   const cssRule = findCssRuleByCssNoModuleRegexp(oneOfRule);
   if (!cssRule) {
@@ -22,10 +19,6 @@ function addTailwindConfig(config: WebpackConfigMutator): WebpackConfigMutator {
     );
   }
   postcssLoader.options.postcssOptions.plugins.unshift(tailwindcssPlugin);
-  // const tailwindPostcss = getTailwindPostcss();
-  // if (cssRule?.use) {
-  //   cssRule.use.push(tailwindPostcss);
-  // }
   return config;
 }
 
@@ -37,12 +30,7 @@ export const previewConfig: WebpackConfigTransformer = (
 export const devServerConfig: WebpackConfigTransformer = (
   config: WebpackConfigMutator
 ) => {
-  console.log(config.raw.module.rules[1].oneOf[0].use[2].options.postcssOptions.plugins)
-  const newConfig = addTailwindConfig(config);
-  console.log(newConfig.raw.module.rules[1].oneOf[0].use[2].options.postcssOptions.plugins[0].toString())
-  // console.log(require("util").inspect(newConfig.raw, { depth : 12}));
-  // throw new Error('gilad')
-  return newConfig;
+  return addTailwindConfig(config);
 };
 
 function findCssRuleByCssNoModuleRegexp(rules: Array<any> = []) {
@@ -58,18 +46,4 @@ function findOneOfRuleInPreviewConfig(rules: Array<any> = []) {
 
 function findPostcssLoaderInRule(loaders: Array<any>) {
   return loaders.find(loader => loader.loader.includes('postcss'));
-}
-
-function getTailwindPostcss() {
-  return {
-    loader: require.resolve("postcss-loader"),
-    options: {
-      postcssOptions: {
-        plugins: [
-          tailwindcssPlugin,
-          autoprefixerPlugin
-        ]
-      }
-    }
-  }
 }
