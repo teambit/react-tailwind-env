@@ -2,8 +2,9 @@ importers:
   .:
     dependencies:
       '@teambit/modules.style-regexps': registry.npmjs.org/@teambit/modules.style-regexps/0.0.3
+      '@teambit/webpack.modules.style-regexps': registry.npmjs.org/@teambit/webpack.modules.style-regexps/0.0.31
       autoprefixer: registry.npmjs.org/autoprefixer/10.2.5_postcss@8.2.13
-      core-js: registry.npmjs.org/core-js/3.12.1
+      core-js: registry.npmjs.org/core-js/3.14.0
       postcss: registry.npmjs.org/postcss/8.2.13
       postcss-loader: registry.npmjs.org/postcss-loader/5.2.0_postcss@8.2.13
       react: registry.npmjs.org/react/17.0.2
@@ -12,18 +13,23 @@ importers:
     devDependencies:
       '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       '@testing-library/react': registry.npmjs.org/@testing-library/react/11.2.6_react-dom@17.0.2+react@17.0.2
-      '@types/jest': registry.npmjs.org/@types/jest/26.0.23
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
       '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/16.14.6
+      '@types/react': registry.npmjs.org/@types/react/17.0.11
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.8
+      '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
     specifiers:
       '@babel/runtime': 7.12.18
       '@teambit/modules.style-regexps': 0.0.3
+      '@teambit/webpack.modules.style-regexps': 0.0.31
       '@testing-library/react': 11.2.6
-      '@types/jest': ^26.0.23
+      '@types/jest': 26.0.20
       '@types/node': 12.20.4
-      '@types/react': ^16.14.6
+      '@types/react': ^17.0.11
+      '@types/react-dom': ^17.0.8
+      '@types/testing-library__jest-dom': 5.9.5
       autoprefixer: 10.2.5
-      core-js: ^3.12.1
+      core-js: ^3.14.0
       postcss: 8.2.13
       postcss-loader: 5.2.0
       react: 17.0.2
@@ -108,7 +114,7 @@ packages:
   registry.npmjs.org/@jest/types/26.6.2:
     dependencies:
       '@types/istanbul-lib-coverage': registry.npmjs.org/@types/istanbul-lib-coverage/2.0.3
-      '@types/istanbul-reports': registry.npmjs.org/@types/istanbul-reports/3.0.0
+      '@types/istanbul-reports': registry.npmjs.org/@types/istanbul-reports/3.0.1
       '@types/node': registry.npmjs.org/@types/node/12.20.4
       '@types/yargs': registry.npmjs.org/@types/yargs/15.0.13
       chalk: registry.npmjs.org/chalk/4.1.1
@@ -169,6 +175,18 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@teambit/modules.style-regexps/-/modules.style-regexps-0.0.3.tgz
     version: 0.0.3
+  registry.npmjs.org/@teambit/webpack.modules.style-regexps/0.0.31:
+    dev: false
+    engines:
+      node: '>=12.15.0'
+    name: '@teambit/webpack.modules.style-regexps'
+    peerDependencies:
+      '@teambit/legacy': 1.0.103
+    resolution:
+      integrity: sha512-syYaRCYiawuSx9mKHUCfFSOGWp1y4yAEPFrMwpKTIukXHcJLcEnETMovZ3eeJ1JlA80LS3L/tlzTp3/CNHJhWg==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@teambit/webpack.modules.style-regexps/-/webpack.modules.style-regexps-0.0.31.tgz
+    version: 0.0.31
   registry.npmjs.org/@testing-library/dom/7.30.4:
     dependencies:
       '@babel/code-frame': registry.npmjs.org/@babel/code-frame/7.12.13
@@ -233,27 +251,27 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/istanbul-lib-report/-/istanbul-lib-report-3.0.0.tgz
     version: 3.0.0
-  registry.npmjs.org/@types/istanbul-reports/3.0.0:
+  registry.npmjs.org/@types/istanbul-reports/3.0.1:
     dependencies:
       '@types/istanbul-lib-report': registry.npmjs.org/@types/istanbul-lib-report/3.0.0
     dev: true
     name: '@types/istanbul-reports'
     resolution:
-      integrity: sha512-nwKNbvnwJ2/mndE9ItP/zc2TCzw6uuodnF4EHYWD+gCQDVBuRQL5UzbZD0/ezy1iKsFU2ZQiDqg4M9dN4+wZgA==
+      integrity: sha512-c3mAZEuK0lvBp8tmuL74XRKn1+y2dcwOUpH7x4WrF6gk1GIgiluDRgMYQtw2OFcBvAJWlt6ASU3tSqxp0Uu0Aw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/istanbul-reports/-/istanbul-reports-3.0.0.tgz
-    version: 3.0.0
-  registry.npmjs.org/@types/jest/26.0.23:
+      tarball: https://registry.npmjs.org/@types/istanbul-reports/-/istanbul-reports-3.0.1.tgz
+    version: 3.0.1
+  registry.npmjs.org/@types/jest/26.0.20:
     dependencies:
       jest-diff: registry.npmjs.org/jest-diff/26.6.2
       pretty-format: registry.npmjs.org/pretty-format/26.6.2
     dev: true
     name: '@types/jest'
     resolution:
-      integrity: sha512-ZHLmWMJ9jJ9PTiT58juykZpL7KjwJywFN3Rr2pTSkyQfydf/rk22yS7W8p5DaVUMQ2BQC7oYiU3FjbTM/mYrOA==
+      integrity: sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/jest/-/jest-26.0.23.tgz
-    version: 26.0.23
+      tarball: https://registry.npmjs.org/@types/jest/-/jest-26.0.20.tgz
+    version: 26.0.20
   registry.npmjs.org/@types/node/12.20.4:
     dev: true
     name: '@types/node'
@@ -278,7 +296,17 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz
     version: 15.7.3
-  registry.npmjs.org/@types/react/16.14.6:
+  registry.npmjs.org/@types/react-dom/17.0.8:
+    dependencies:
+      '@types/react': registry.npmjs.org/@types/react/17.0.11
+    dev: true
+    name: '@types/react-dom'
+    resolution:
+      integrity: sha512-0ohAiJAx1DAUEcY9UopnfwCE9sSMDGnY/oXjWMax6g3RpzmTt2GMyMVAXcbn0mo8XAff0SbQJl2/SBU+hjSZ1A==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.8.tgz
+    version: 17.0.8
+  registry.npmjs.org/@types/react/17.0.11:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
       '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
@@ -286,10 +314,10 @@ packages:
     dev: true
     name: '@types/react'
     resolution:
-      integrity: sha512-Ol/aFKune+P0FSFKIgf+XbhGzYGyz0p7g5befSt4rmbzfGLaZR0q7jPew9k7d3bvrcuaL8dPy9Oz3XGZmf9n+w==
+      integrity: sha512-yFRQbD+whVonItSk7ZzP/L+gPTJVBkL/7shLEF+i9GC/1cV3JmUxEQz6+9ylhUpWSDuqo1N9qEvqS6vTj4USUA==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react/-/react-16.14.6.tgz
-    version: 16.14.6
+      tarball: https://registry.npmjs.org/@types/react/-/react-17.0.11.tgz
+    version: 17.0.11
   registry.npmjs.org/@types/scheduler/0.16.1:
     dev: true
     name: '@types/scheduler'
@@ -298,6 +326,16 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.1.tgz
     version: 0.16.1
+  registry.npmjs.org/@types/testing-library__jest-dom/5.9.5:
+    dependencies:
+      '@types/jest': registry.npmjs.org/@types/jest/26.0.20
+    dev: true
+    name: '@types/testing-library__jest-dom'
+    resolution:
+      integrity: sha512-ggn3ws+yRbOHog9GxnXiEZ/35Mow6YtPZpd7Z5mKDeZS/o7zx3yAle0ov/wjhVB5QT4N2Dt+GNoGCdqkBGCajQ==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.9.5.tgz
+    version: 5.9.5
   registry.npmjs.org/@types/yargs-parser/20.2.0:
     dev: true
     name: '@types/yargs-parser'
@@ -671,15 +709,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.11.2.tgz
     version: 3.11.2
-  registry.npmjs.org/core-js/3.12.1:
+  registry.npmjs.org/core-js/3.14.0:
     dev: false
     name: core-js
     requiresBuild: true
     resolution:
-      integrity: sha512-Ne9DKPHTObRuB09Dru5AjwKjY4cJHVGu+y5f7coGn1E9Grkc3p2iBwE9AI/nJzsE29mQF7oq+mhYYRqOMFN1Bw==
+      integrity: sha512-3s+ed8er9ahK+zJpp9ZtuVcDoFzHNiZsPbNAAE4KXgrRHbjSqqNN6xGSXq6bq7TZIbKj4NLrLb6bJ5i+vSVjHA==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/core-js/-/core-js-3.12.1.tgz
-    version: 3.12.1
+      tarball: https://registry.npmjs.org/core-js/-/core-js-3.14.0.tgz
+    version: 3.14.0
   registry.npmjs.org/cosmiconfig/7.0.0:
     dependencies:
       '@types/parse-json': registry.npmjs.org/@types/parse-json/4.0.0

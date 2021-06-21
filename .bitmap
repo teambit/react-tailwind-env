@@ -3,21 +3,21 @@
 {
     "components/tailwind-button": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "components/button/components/tailwind-button"
     },
     "envs/tailwind-react": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "components/envs/tailwind-bit/envs/tailwind-react"
     },
     "styles/tailwind-styles": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/tailwind-styles"
     },
-    "version": "1.0.71"
+    "$schema-version": "14.9.0"
 }

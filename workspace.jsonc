@@ -54,7 +54,8 @@
     "devFilePatterns": [
       "**/*.spec.ts"
     ],
-    "strictPeerDependencies": true
+    "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
