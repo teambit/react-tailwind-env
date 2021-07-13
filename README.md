@@ -1,6 +1,8 @@
 # react-tailwind-env
 An example of a custom bit react env with basic support for tailwindcss
 
+Read docs about [Custom Webpack Config](https://harmony-docs.bit.dev/extending-bit/mutate-webpack-config)
+
 This is based on a live coding session you can find [here](https://www.twitch.tv/debs_obrien/v/1011007644)
 This has been slightly updated since the live session, but watching the session should give you a good understanding of what there is here.
 
