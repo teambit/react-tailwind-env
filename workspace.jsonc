@@ -75,7 +75,7 @@
     "components/envs": {
       "teambit.harmony/aspect": {}
     },
-    "components/button": {
+    "components/ui": {
       "shohamgilad.tailwind-test/envs/tailwind-react": {}
     },
     "components/tailwind-styles": {

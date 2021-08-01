@@ -1,0 +1,22 @@
+---
+description: 'A ThemedComponent component.'
+labels: ['label1', 'label2', 'label3']
+---
+
+import { ThemedComponent } from './themed-component';
+
+## React Component for rendering text
+
+This component demonstrate a usage of custom theme from tailwind config
+
+### Component usage
+```js
+<ThemedComponent className="p-16">This components has a className *p-16* which would have an value of 1.6rem as it was defined in the *tailwind.config.js*</ThemedComponent>
+```
+
+### Using props to customize the text
+
+switch the className between p-16 and p-20 to see it change live:
+```js live
+<ThemedComponent className="p-16">This components has a className *p-16* which would have an value of 1.6rem as it was defined in the *tailwind.config.js*</ThemedComponent>
+```

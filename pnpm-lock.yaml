@@ -1,35 +1,33 @@
 importers:
   .:
     dependencies:
-      '@teambit/modules.style-regexps': registry.npmjs.org/@teambit/modules.style-regexps/0.0.3
+      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       '@teambit/webpack.modules.style-regexps': registry.npmjs.org/@teambit/webpack.modules.style-regexps/0.0.31
       autoprefixer: registry.npmjs.org/autoprefixer/10.2.5_postcss@8.2.13
-      core-js: registry.npmjs.org/core-js/3.14.0
+      core-js: registry.npmjs.org/core-js/3.15.2
       postcss: registry.npmjs.org/postcss/8.2.13
       postcss-loader: registry.npmjs.org/postcss-loader/5.2.0_postcss@8.2.13
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
       tailwindcss: registry.npmjs.org/tailwindcss/2.1.2_941a81a5c9afb5d3c8bce0db60f786b1
     devDependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
       '@testing-library/react': registry.npmjs.org/@testing-library/react/11.2.6_react-dom@17.0.2+react@17.0.2
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
       '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/17.0.11
-      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.8
+      '@types/react': registry.npmjs.org/@types/react/17.0.14
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.9
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
     specifiers:
       '@babel/runtime': 7.12.18
-      '@teambit/modules.style-regexps': 0.0.3
       '@teambit/webpack.modules.style-regexps': 0.0.31
       '@testing-library/react': 11.2.6
       '@types/jest': 26.0.20
       '@types/node': 12.20.4
-      '@types/react': ^17.0.11
-      '@types/react-dom': ^17.0.8
+      '@types/react': ^17.0.14
+      '@types/react-dom': ^17.0.9
       '@types/testing-library__jest-dom': 5.9.5
       autoprefixer: 10.2.5
-      core-js: ^3.14.0
+      core-js: ^3.15.2
       postcss: 8.2.13
       postcss-loader: 5.2.0
       react: 17.0.2
@@ -84,7 +82,7 @@ packages:
   registry.npmjs.org/@babel/runtime/7.12.18:
     dependencies:
       regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.7
-    dev: true
+    dev: false
     name: '@babel/runtime'
     resolution:
       integrity: sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==
@@ -163,18 +161,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.6.tgz
     version: 1.2.6
-  registry.npmjs.org/@teambit/modules.style-regexps/0.0.3:
-    dev: false
-    engines:
-      node: '>=12.15.0'
-    name: '@teambit/modules.style-regexps'
-    peerDependencies:
-      '@teambit/legacy': 1.0.76
-    resolution:
-      integrity: sha512-WhEGkG5pqSOs7NXZbDiQz826ScoIIcaX7fCI1ZO22EiIjJA2FGM4R9pNRQDbpV5QuDzqK238nTg6BG6wo7fimw==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@teambit/modules.style-regexps/-/modules.style-regexps-0.0.3.tgz
-    version: 0.0.3
   registry.npmjs.org/@teambit/webpack.modules.style-regexps/0.0.31:
     dev: false
     engines:
@@ -288,44 +274,44 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.0.tgz
     version: 4.0.0
-  registry.npmjs.org/@types/prop-types/15.7.3:
+  registry.npmjs.org/@types/prop-types/15.7.4:
     dev: true
     name: '@types/prop-types'
     resolution:
-      integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+      integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz
-    version: 15.7.3
-  registry.npmjs.org/@types/react-dom/17.0.8:
+      tarball: https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.4.tgz
+    version: 15.7.4
+  registry.npmjs.org/@types/react-dom/17.0.9:
     dependencies:
-      '@types/react': registry.npmjs.org/@types/react/17.0.11
+      '@types/react': registry.npmjs.org/@types/react/17.0.14
     dev: true
     name: '@types/react-dom'
     resolution:
-      integrity: sha512-0ohAiJAx1DAUEcY9UopnfwCE9sSMDGnY/oXjWMax6g3RpzmTt2GMyMVAXcbn0mo8XAff0SbQJl2/SBU+hjSZ1A==
+      integrity: sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.8.tgz
-    version: 17.0.8
-  registry.npmjs.org/@types/react/17.0.11:
+      tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.9.tgz
+    version: 17.0.9
+  registry.npmjs.org/@types/react/17.0.14:
     dependencies:
-      '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
-      '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
+      '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.4
+      '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.2
       csstype: registry.npmjs.org/csstype/3.0.8
     dev: true
     name: '@types/react'
     resolution:
-      integrity: sha512-yFRQbD+whVonItSk7ZzP/L+gPTJVBkL/7shLEF+i9GC/1cV3JmUxEQz6+9ylhUpWSDuqo1N9qEvqS6vTj4USUA==
+      integrity: sha512-0WwKHUbWuQWOce61UexYuWTGuGY/8JvtUe/dtQ6lR4sZ3UiylHotJeWpf3ArP9+DSGUoLY3wbU59VyMrJps5VQ==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react/-/react-17.0.11.tgz
-    version: 17.0.11
-  registry.npmjs.org/@types/scheduler/0.16.1:
+      tarball: https://registry.npmjs.org/@types/react/-/react-17.0.14.tgz
+    version: 17.0.14
+  registry.npmjs.org/@types/scheduler/0.16.2:
     dev: true
     name: '@types/scheduler'
     resolution:
-      integrity: sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
+      integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.1.tgz
-    version: 0.16.1
+      tarball: https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz
+    version: 0.16.2
   registry.npmjs.org/@types/testing-library__jest-dom/5.9.5:
     dependencies:
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
@@ -709,15 +695,15 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.11.2.tgz
     version: 3.11.2
-  registry.npmjs.org/core-js/3.14.0:
+  registry.npmjs.org/core-js/3.15.2:
     dev: false
     name: core-js
     requiresBuild: true
     resolution:
-      integrity: sha512-3s+ed8er9ahK+zJpp9ZtuVcDoFzHNiZsPbNAAE4KXgrRHbjSqqNN6xGSXq6bq7TZIbKj4NLrLb6bJ5i+vSVjHA==
+      integrity: sha512-tKs41J7NJVuaya8DxIOCnl8QuPHx5/ZVbFo1oKgVl1qHFBBrDctzQGtuLjPpRdNTWmKPH6oEvgN/MUID+l485Q==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/core-js/-/core-js-3.14.0.tgz
-    version: 3.14.0
+      tarball: https://registry.npmjs.org/core-js/-/core-js-3.15.2.tgz
+    version: 3.15.2
   registry.npmjs.org/cosmiconfig/7.0.0:
     dependencies:
       '@types/parse-json': registry.npmjs.org/@types/parse-json/4.0.0
@@ -1750,7 +1736,6 @@ packages:
       tarball: https://registry.npmjs.org/reduce-css-calc/-/reduce-css-calc-2.1.8.tgz
     version: 2.1.8
   registry.npmjs.org/regenerator-runtime/0.13.7:
-    dev: true
     name: regenerator-runtime
     resolution:
       integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==

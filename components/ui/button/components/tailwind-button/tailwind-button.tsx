@@ -1,5 +1,5 @@
 import React from 'react';
-import '@shohamgilad/tailwind-test.styles.tailwind-styles';
+import '@shohamgilad/tailwind-test.styles.tailwind-styles/dist/styles.css';
 
 export type TailwindButtonProps = {
   /**

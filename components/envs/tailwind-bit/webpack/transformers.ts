@@ -1,6 +1,7 @@
 import { WebpackConfigTransformer, WebpackConfigMutator } from "@teambit/webpack";
 import * as stylesRegexps from "@teambit/webpack.modules.style-regexps";
 import tailwindcssPlugin from "tailwindcss";
+import { tailwindConfigPath } from "@shohamgilad/tailwind-test.styles.tailwind-styles";
 
 function addTailwindConfig(config: WebpackConfigMutator): WebpackConfigMutator {
   // @ts-ignore
@@ -18,7 +19,9 @@ function addTailwindConfig(config: WebpackConfigMutator): WebpackConfigMutator {
       "postcss loader not found. this probably means the webpack config of bit itself has changed"
     );
   }
-  postcssLoader.options.postcssOptions.plugins.unshift(tailwindcssPlugin);
+  postcssLoader.options.postcssOptions.plugins.unshift(
+    tailwindcssPlugin(tailwindConfigPath)
+  );
   return config;
 }
 
