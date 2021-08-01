@@ -1,5 +1,5 @@
 // require('./styles.css');
-const styles = require("./style.css");
+const styles = require("./styles.css");
 // export * as styles from './style.css';
 // export * as tailwindConfig from './tailwind.config';
 const tailwindConfig = require('./tailwind.config');
