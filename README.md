@@ -7,6 +7,17 @@ See the already exported components in [https://bit.dev/shohamgilad/tailwind-tes
 ## requirements
 This repo has recently changed to use new APIs of bit available only from version 0.0.426 or higher.
 
+## run project
+```bash
+git clone https://github.com/teambit/react-tailwind-env.git
+bit install
+bit compile
+bit install
+bit start
+```
+In case you plan to use it and export components to your own remote scope, I recommend run: `bit init --reset-new` to make all the components new components.
+Then you can change the default scope, and the relevant import statements.
+
 ## components
 ### tailwind-react
 A custom env which extend the core react aspect and transform its webpack config to support tailwind css.
