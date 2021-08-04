@@ -1,10 +1,13 @@
+import { MainRuntime } from '@teambit/cli';
 import { EnvsMain, EnvsAspect } from '@teambit/envs'
 import { ReactAspect, ReactMain } from '@teambit/react'
+import { TailwindReactAspect } from './tailwind-react.aspect';
 import { previewConfig, devServerConfig } from './webpack';
 
-export class TailwindReactExtension {
+export class TailwindReactMain {
   constructor(private react: ReactMain) {}
 
+  static runtime = MainRuntime;
   static dependencies: any = [EnvsAspect, ReactAspect]
 
   static async provider([envs, react]: [EnvsMain, ReactMain]) {
@@ -20,6 +23,8 @@ export class TailwindReactExtension {
 
     envs.registerEnv(TailwindReactEnv)
 
-    return new TailwindReactExtension(react)
+    return new TailwindReactMain(react)
   }
 }
+
+TailwindReactAspect.addRuntime(TailwindReactMain);
