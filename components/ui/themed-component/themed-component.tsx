@@ -1,5 +1,4 @@
 import React, { ReactElement } from "react";
-import "@shohamgilad/tailwind-test.styles.tailwind-styles/dist/styles.css";
 
 export type ThemedComponentProps = {
   className: string;
