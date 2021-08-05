@@ -3,7 +3,7 @@
 {
     "envs/tailwind-react": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/envs/tailwind-bit"
     },
@@ -15,13 +15,13 @@
     },
     "ui/button": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/ui/button/components/tailwind-button"
     },
     "ui/themed-component": {
         "scope": "shohamgilad.tailwind-test",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "components/ui/themed-component"
     },
