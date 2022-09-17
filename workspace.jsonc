@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "my-workspace-name",
+    "name": "test",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -22,11 +22,11 @@
      * scope - scope name only, e.g. 'compilation'.
      * owner - owner name in bit.dev, e.g. 'teambit'.
      **/
-    "defaultDirectory": "{scope}/{name}",
+    "defaultDirectory": "components/{name}",
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "shohamgilad.tailwind-test"
+    "defaultScope": "dynotrust.test"
   },
   /**
    * main configuration for component dependency resolution.
@@ -76,7 +76,7 @@
       "teambit.harmony/aspect": {}
     },
     "components/ui": {
-      "shohamgilad.tailwind-test/envs/tailwind-react": {}
+      "dynotrust.test/envs/tailwind-react": {}
     },
     "components/tailwind-styles": {
       "teambit.react/react": {}
