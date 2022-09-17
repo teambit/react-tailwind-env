@@ -4,7 +4,7 @@ import { ReactAspect, ReactPreview } from '@teambit/react';
 import { TailwindReactAspect } from './tailwind-react.aspect';
 
 // load tailwind global custom styles, for compositions
-import '@shohamgilad/tailwind-test.styles.tailwind-styles/dist/styles.css';
+import '@dynotrust/test.styles.tailwind-styles/dist/styles.css';
 
 export class TailwindReactPreview {
   static runtime = PreviewRuntime;
